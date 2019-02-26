@@ -1,0 +1,12 @@
+
+
+######################
+# Example ingredient #
+######################
+
+## Property ingredient example
+val.a={{demo.val.a}}
+val.b={{val.b}}
+val.c.env={{demo.val.c.dev}}{{demo.val.c.qa}}{{demo.val.c.prod}}
+val.d={{demo.val.d}}
+

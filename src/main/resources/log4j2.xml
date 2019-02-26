@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="FATAL">
+	<!-- // TRACE < DEBUG < INFO < WARN < ERROR < FATAL -->
+
+	<Appenders>
+
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="[Chef] %d{HH:mm:ss.SSS} %m%n" />
+			<!-- <PatternLayout pattern="[%5p] [Chef] %d{HH:mm:ss.SSS} [%c{1}] %m%n" /> -->
+		</Console>
+	</Appenders>
+	<Loggers>
+
+
+		<logger name="com.ivoslabs" additivity="false" level="INFO">
+			<appender-ref ref="console" />
+		</logger>
+ 
+		<root level="ERROR">
+			<appender-ref ref="console" />
+		</root>
+		
+	</Loggers>
+</Configuration>

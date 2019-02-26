@@ -1,0 +1,38 @@
+
+##################
+# Example recipe #
+##################
+
+# Tags for all possible deployment environments
+environments=dev|QA|prod
+
+# List of all .properties, .xml that have values with environment dependency
+# path after unzip and before copy/move
+;ingredients
+{{project}}.properties
+{{project}}.xml
+
+# List of values to use for each environment  separated by '|'
+;values
+demo.val.a=value a for dev|value a for QA|value a for prod
+val.b=value b for dev|value b for QA|value b for prod
+## values may be empty ej:
+demo.val.c.dev=dev||
+demo.val.c.qa=|QA|
+demo.val.c.prod=||prod
+demo.val.d=||
+log4j.project.level=DEBUG|DEBUG|INFO
+
+# List of zips to unzip
+;unzip
+# tounzip.zip to tounzipdir/dir1
+
+# List of files to copy
+;copy
+# tocopy.txt to tocopydir/cp1.txt
+
+# List of files to move
+;move
+# tomove1.txt to tomovedir/mv1.txt
+
+
