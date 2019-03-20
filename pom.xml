@@ -71,7 +71,7 @@
                     </descriptorRefs>
                     <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
-                <executions>
+                <executions> 
                     <execution>
                         <id>make-assembly</id>
                         <phase>install</phase>
