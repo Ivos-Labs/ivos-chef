@@ -71,16 +71,16 @@
                     </descriptorRefs>
                     <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
-                <executions>
+                <executions> 
                     <execution>
-                        <id>make-assembly</id>
+                        <id>make-assembly</id> 
                         <phase>install</phase>
                         <goals>
                             <goal>single</goal>
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> 
             
         </plugins>
     </build>
